@@ -18,7 +18,7 @@ fn main() {
 
     println!(
         "The area of this rectangle is {} square pixels.",
-        area(&rect1)
+        rect1.area()
     );
 
     //let's have some fun!
@@ -29,11 +29,8 @@ fn main() {
     //? add `#[derive(Debug)]` to `Rectangle` or manually `impl Debug for Rectangle`
 
     //* Last try...
-    println!("rect1 is {:#?}", rect1); //* rect1 is Rectangle { width: 30, height: 50 }
+    // println!("rect1 is {:#?}", rect1); //* rect1 is Rectangle { width: 30, height: 50 }
     
 
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
-}
