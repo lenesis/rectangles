@@ -9,5 +9,13 @@ fn main() {
         height: 50,
     };
 
-    
+    println!(
+        "The area of this rectangle is {} square pixels.",
+        area(&rect1)
+    );
+
+}
+
+fn area (rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
 }
